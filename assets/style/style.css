@@ -1,6 +1,10 @@
+body{
+    background-color: cornflowerblue;
+}
 header{
-    border: 1px solid red;
     height: 100px;
+    font-size: 100px;
+    color: white;
 }
 .flex{
     display: flex;
@@ -9,18 +13,17 @@ header{
 } 
 
 #principal{
-    color: blue;
-    border: 1px solid red;
+    color: white;
     margin-top: 50px;
     margin-bottom: 10px;
     width: 50%;
-    
+    font-size: larger;
 }
 
 form{
     width: 50%;
     height: fit-content;
-    border: 1px solid red;
+    border: 3px solid black;
     margin-bottom: 50px;
     
 }
@@ -35,23 +38,35 @@ textarea{
     margin-right: auto;
     width: 80%;
 }
+
+#container1, #container2, #container3, #container4, #container5{
+    display: flex;
+    flex-direction: column;
+
+}
 #subAndDrop{
-    border: 1px solid red;
+    
     width: fit-content;
     margin-left: 10%;
 }
 #pScore{
-    border: 1px solid red;
+    
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
-button{
+#magicButton{
     width: 50%;
     height: 50px;
     margin-bottom: 100px;
 }
-#finalBlock{
+#copy, #copy2, #copy3, #copy4, #copy5{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#finalBlock, #finalBlock2, #finalBlock3, #finalBlock4, #finalBlock5{
     height: fit-content;
     width: 70%;
     border: 1px solid red;
@@ -60,8 +75,12 @@ button{
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
-
+#finalStarScore{
+    border: 1px solid red;
+    margin-bottom: 50px;
+}
 h4{
     width: fit-content;
     margin-left: auto;
@@ -75,4 +94,10 @@ h3{
 
 P{
     margin-bottom: 10px;
+}
+#textarea{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
