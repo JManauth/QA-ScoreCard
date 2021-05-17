@@ -5,7 +5,7 @@
 var makeMagic = document.querySelector("#magicButton")
 
 function convert(){
-//asigns all of the drop down choices and written paragraphs to variables
+        //asigns all of the drop down choices and written paragraphs to variables
     var yesNo1 = document.getElementById("politeness").value;
     var yesNo2= document.getElementById("empathy").value;
     var yesNo3 = document.getElementById("toutingBenefits").value;
@@ -14,7 +14,8 @@ function convert(){
     var Txt2 = document.getElementById("empathyText").value;
     var Txt3 = document.getElementById("toutingBenefitsText").value;
     var Txt4 = document.getElementById("smallTalkText").value;
-//this loops through all of the children of the form and makes them dissapear
+    var score = document.getElementById("principalScore").value;
+        //this loops through all of the children of the form and makes them dissapear
     var x = document.getElementById("container1").children;
     
         for (i=0; i < x.length; i++){
@@ -22,11 +23,14 @@ function convert(){
         };
     
     var d = document.createElement("div");
-    
     d.setAttribute("id", "finalBlock");
+
+    var s = document.createElement("h4")
     
     document.getElementById("container1").appendChild(d);
-    
+    document.getElementById("container1").appendChild(s);
+
+
     var h1= document.createElement("h3");
     var h2= document.createElement("h3");
     var h3= document.createElement("h3");
@@ -60,6 +64,8 @@ function convert(){
 
     h4.textContent = "Small Talk - " + yesNo4;
     p4.textContent = Txt4;
+
+    s.textContent = "Score: " +score;
 }
 
 

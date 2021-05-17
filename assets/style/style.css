@@ -40,9 +40,14 @@ textarea{
     width: fit-content;
     margin-left: 10%;
 }
-
+#pScore{
+    border: 1px solid red;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 button{
-    width: 25%;
+    width: 50%;
     height: 50px;
     margin-bottom: 100px;
 }
@@ -55,4 +60,19 @@ button{
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+h4{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+h3{
+    line-height: 4;
+}
+
+P{
+    margin-bottom: 10px;
 }
