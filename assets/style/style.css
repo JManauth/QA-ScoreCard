@@ -17,7 +17,7 @@ header{
     
 }
 
-#container{
+form{
     width: 50%;
     height: fit-content;
     border: 1px solid red;
@@ -35,7 +35,7 @@ textarea{
     margin-right: auto;
     width: 80%;
 }
-.subAndDrop{
+#subAndDrop{
     border: 1px solid red;
     width: fit-content;
     margin-left: 10%;
@@ -45,4 +45,14 @@ button{
     width: 25%;
     height: 50px;
     margin-bottom: 100px;
+}
+#finalBlock{
+    height: fit-content;
+    width: 70%;
+    border: 1px solid red;
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
