@@ -1,10 +1,10 @@
-body{
-    background-color: cornflowerblue;
-}
+
 header{
     height: 100px;
     font-size: 100px;
     color: white;
+    background-color: cornflowerblue;
+    border-bottom: 5px solid black;
 }
 .flex{
     display: flex;
@@ -15,6 +15,7 @@ header{
     height: fit-content;
     width: fit-content;
     border: 3px solid black;
+    border-radius: 15px 50px 30px;
     position: fixed;
     top: 18.8%;
     left: 1%;
@@ -29,7 +30,7 @@ ul li{
     margin: 10px;
 }
 #principal, #principal2, #principal3, #principal4, #principal5{
-    color: white;
+    color:black;
     margin-top: 50px;
     margin-bottom: 10px;
     width: 50%;
@@ -40,6 +41,7 @@ form{
     width: 50%;
     height: fit-content;
     border: 3px solid black;
+    border-radius: 15px 50px 30px;
     margin-bottom: 50px;
     
 }
@@ -53,11 +55,14 @@ textarea{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
 #container1, #container2, #container3, #container4, #container5{
     display: flex;
     flex-direction: column;
+    background-color: cornflowerblue;
 
 }
 #subAndDrop{
@@ -75,6 +80,7 @@ textarea{
     width: 50%;
     height: 50px;
     margin-bottom: 100px;
+    border-radius: 15px 50px 30px;
 }
 #copy, #copy2, #copy3, #copy4, #copy5{
     width: fit-content;
@@ -85,13 +91,14 @@ textarea{
 #finalBlock, #finalBlock2, #finalBlock3, #finalBlock4, #finalBlock5{
     height: fit-content;
     width: 70%;
-    
-    background-color:lightblue;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
 }
 #finalStarScore{
     
