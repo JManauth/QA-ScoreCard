@@ -69,8 +69,8 @@ textarea{
 #finalBlock, #finalBlock2, #finalBlock3, #finalBlock4, #finalBlock5{
     height: fit-content;
     width: 70%;
-    border: 1px solid red;
-    background-color: brown;
+    
+    background-color:lightblue;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -78,7 +78,7 @@ textarea{
     position: relative;
 }
 #finalStarScore{
-    border: 1px solid red;
+    
     margin-bottom: 50px;
 }
 h4{
