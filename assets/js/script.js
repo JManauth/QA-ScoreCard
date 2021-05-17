@@ -5,7 +5,15 @@
 var makeMagic = document.querySelector("#magicButton")
 
 function convert(){
-    console.log('sup foo');
+    var Txt1 = document.getElementById("politeText").value;
+    var Txt2 = document.getElementById("empathyText").value;
+    var Txt3 = document.getElementById("toutingBenefitsText").value;
+    var Txt4 = document.getElementById("smallTalkText").value;
+    var yesNo1 = document.getElementById("politeness").value;
+    var yesNo2= document.getElementById("empathy").value;
+    var yesNo3 = document.getElementById("toutingBenefits").value;
+    var yesNo4 = document.getElementById("smallTalk").value;
+    
 }
 
 
