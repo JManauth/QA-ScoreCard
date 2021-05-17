@@ -27,8 +27,6 @@ header{
 label, select{
     margin-bottom: 10px;
     margin-top: 10px;
-    
-
 }
 textarea{
     resize: none;
@@ -41,4 +39,10 @@ textarea{
     border: 1px solid red;
     width: fit-content;
     margin-left: 10%;
+}
+
+button{
+    width: 25%;
+    height: 50px;
+    margin-bottom: 100px;
 }
