@@ -66,12 +66,13 @@ function convert1(){
     p4.textContent = Txt4;
 
     s.textContent = "Score: " +score;
-   /*     
+      
     var copy = document.createElement("button")
     document.getElementById("container1").appendChild(copy);
     copy.setAttribute("id", "copy");
+    copy.setAttribute("onclick", "window.location.href='#principal2';")
     copy.innerHTML = "Copy To Clipboard";
-    */
+    
 };
 
 function convert2(){
@@ -136,12 +137,13 @@ h42.textContent = "Referencing the Account - " + yesNo42;
 p42.textContent = Txt42;
 
 s2.textContent = "Score: " +score2;
-/*
+
 var copy2 = document.createElement("button")
     document.getElementById("container2").appendChild(copy2);
     copy2.setAttribute("id", "copy2");
+    copy2.setAttribute("onclick", "window.location.href='#principal3';")
     copy2.innerHTML = "Copy To Clipboard";
-*/
+
 };
 
 function convert3(){
@@ -187,12 +189,13 @@ h23.textContent = "Overcoming Objections - " + yesNo23;
 p23.textContent = Txt23;
 
 s3.textContent = "Score: " +score3;
-/*
+
 var copy3 = document.createElement("button")
     document.getElementById("container3").appendChild(copy3);
     copy3.setAttribute("id", "copy3");
+    copy3.setAttribute("onclick", "window.location.href='#principal4';")
     copy3.innerHTML = "Copy To Clipboard";
-*/
+
 };
 
 function convert4(){
@@ -247,12 +250,13 @@ h34.textContent = "De-Escalation - " + yesNo34;
 p34.textContent = Txt34;
 
 s4.textContent = "Score: " +score4;
-/*
+
 var copy4 = document.createElement("button")
     document.getElementById("container4").appendChild(copy4);
     copy4.setAttribute("id", "copy4");
+    copy4.setAttribute("onclick", "window.location.href='#principal5';")
     copy4.innerHTML = "Copy To Clipboard";
-*/
+
 };
 
 function convert5(){
@@ -317,12 +321,12 @@ h45.textContent = "Notes - " + yesNo45;
 p45.textContent = Txt45;
 
 s5.textContent = "Score: " +score5;
-/*
+
 var copy5 = document.createElement("button")
     document.getElementById("container5").appendChild(copy5);
     copy5.setAttribute("id", "copy5");
     copy5.innerHTML = "Copy To Clipboard";
-*/
+
 }; 
 
 function starScore(){
@@ -338,7 +342,6 @@ function starScore(){
     var children = document.getElementById("flex").childElementCount;
 
     div.setAttribute("id", "finalStarScore");
-    //document.getElementById("flex").insertBefore("div", "button");
     origin.insertBefore(div, origin.children[10]);
     div.textContent = "Final Star Score: " + finalStarScore;
     
@@ -353,21 +356,12 @@ function convertAll(){
     convert4();
     convert5();
     starScore();
-    
-    /*var copy = document.querySelector("#copy");
-    var copy2 = document.querySelector("#copy2");
-    var copy3 = document.querySelector("#copy3");
-    var copy4 = document.querySelector("#copy4");
-    var copy5 = document.querySelector("#copy5");
-    copy.addEventListener("click", copy2ClipBoard);
-    copy2.addEventListener("click", copy2ClipBoard2);
-    copy3.addEventListener("click", copy2ClipBoard3);
-    copy4.addEventListener("click", copy2ClipBoard4);
-    copy5.addEventListener("click", copy2ClipBoard5(event)); */
+    copyFunction();
 };
-/*
 
-function copy2ClipBoard(){
+
+function copy2ClipBoard(event){
+    event.preventDefault();
    const textarea = document.createElement('textarea');
    const text2Copy = document.getElementById('finalBlock')
    textarea.setAttribute("id", "textarea")
@@ -377,9 +371,11 @@ function copy2ClipBoard(){
    textarea.select();
    document.execCommand('copy');
    document.getElementById("finalBlock").removeChild(textarea);
+   return;
 };
 
-function copy2ClipBoard2(){
+function copy2ClipBoard2(event){
+    event.preventDefault();
     const textarea = document.createElement('textarea');
     const text2Copy = document.getElementById('finalBlock2')
     textarea.setAttribute("id", "textarea")
@@ -389,9 +385,11 @@ function copy2ClipBoard2(){
     textarea.select();
     document.execCommand('copy');
     document.getElementById("finalBlock2").removeChild(textarea);
+    return;
  };
 
- function copy2ClipBoard3(){
+ function copy2ClipBoard3(event){
+    event.preventDefault();
     const textarea = document.createElement('textarea');
     const text2Copy = document.getElementById('finalBlock3')
     textarea.setAttribute("id", "textarea")
@@ -401,9 +399,11 @@ function copy2ClipBoard2(){
     textarea.select();
     document.execCommand('copy');
     document.getElementById("finalBlock3").removeChild(textarea);
+    return;
  };
 
- function copy2ClipBoard4(){
+ function copy2ClipBoard4(event){
+    event.preventDefault();
     const textarea = document.createElement('textarea');
     const text2Copy = document.getElementById('finalBlock4')
     textarea.setAttribute("id", "textarea")
@@ -413,9 +413,10 @@ function copy2ClipBoard2(){
     textarea.select();
     document.execCommand('copy');
     document.getElementById("finalBlock4").removeChild(textarea);
+    return;
  };
 
- function copy2ClipBoard5(){
+ function copy2ClipBoard5(event){
      event.preventDefault();
     const textarea = document.createElement('textarea');
     const text2Copy = document.getElementById('finalBlock5')
@@ -426,7 +427,23 @@ function copy2ClipBoard2(){
     textarea.select();
     document.execCommand('copy');
     document.getElementById("finalBlock5").removeChild(textarea);
+    return;
  };
- */
+
+
+ function copyFunction(){
+    var copy = document.querySelector("#copy");
+    var copy2 = document.querySelector("#copy2");
+    var copy3 = document.querySelector("#copy3");
+    var copy4 = document.querySelector("#copy4");
+    const copy5 = document.querySelector("#copy5");
+    copy.addEventListener("click", copy2ClipBoard);
+    copy2.addEventListener("click", copy2ClipBoard2);
+    copy3.addEventListener("click", copy2ClipBoard3);
+    copy4.addEventListener("click", copy2ClipBoard4);
+    copy5.addEventListener("click", copy2ClipBoard5);
+ }
+
+ 
 makeMagic.addEventListener("click", convertAll)
 
