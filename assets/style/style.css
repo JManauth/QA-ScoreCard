@@ -23,6 +23,12 @@ header{
 a{
     text-decoration: none;
 }
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
 ul li{
     list-style-type: none;
     font-size: larger;
@@ -34,7 +40,7 @@ ul li{
     margin-top: 50px;
     margin-bottom: 10px;
     width: 50%;
-    font-size: larger;
+    font-size: 40px;
 }
 
 form{
@@ -43,14 +49,18 @@ form{
     border: 3px solid black;
     border-radius: 15px 50px 30px;
     margin-bottom: 50px;
-    
 }
-label, select{
-    margin-bottom: 10px;
-    margin-top: 10px;
+
+label{
+    color: white;
+    font-size: 25px;
+}
+select{
+    height: 27px;
 }
 textarea{
     resize: none;
+    font-size: 18px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -75,12 +85,14 @@ textarea{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 #magicButton{
     width: 50%;
     height: 50px;
     margin-bottom: 100px;
     border-radius: 15px 50px 30px;
+    font-size: larger;
 }
 #copy, #copy2, #copy3, #copy4, #copy5{
     width: fit-content;
@@ -104,11 +116,14 @@ textarea{
     
     margin-bottom: 50px;
 }
+/* h4 is the principal score that shows after conversion*/
 h4{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
 }
 
 h3{
@@ -117,6 +132,9 @@ h3{
 
 P{
     margin-bottom: 10px;
+}
+#finalStarScore{
+    font-size: 35px;
 }
 #textarea{
     position: absolute;
